@@ -1,58 +1,77 @@
 *{
+    html{
+    scroll-behavior:smooth;
+}
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
 body{
+    margin:0;
     font-family:Arial, sans-serif;
-    background:#111;
-    color:white;
+    background:#ffffff;
+    color:#111827;
 }
-
 header{
-    background:black;
+    background:rgb(255, 255, 255);
     color:gold;
     text-align:center;
     padding:20px;
 }
 
 .hero{
-
-    height:90vh;
-
+    height:100vh;
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
-
-    padding:20px;
-
+    padding:0 10%;
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75));
 }
 
 .hero h1{
-    font-size:50px;
+    font-size:72px;
     color:gold;
+    margin-bottom:20px;
+    line-height:80px;
 }
 
 .hero p{
-    font-size:20px;
-    margin-top:15px;
+
+    max-width:900px;
+
+    color:white;
+
+    font-size:24px;
+
+    line-height:40px;
+
+    margin-bottom:40px;
+
 }
 
-button{
-    margin-top:30px;
-    padding:12px 25px;
-    background:gold;
+.buttons button{
+
+    padding:18px 35px;
+
+    font-size:20px;
+
     border:none;
-    border-radius:5px;
-    font-size:18px;
+
+    border-radius:8px;
+
     cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-5px);
+
 }
 nav{
     display:flex;
@@ -88,12 +107,16 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 60px;
-    background:#000;
+    background:#ffffff;
 }
 
 .logo img{
-    width:70px;
-    height:auto;
+    width:60px;
+    transition:.3s;
+}
+
+.logo img:hover{
+    transform:rotate(5deg) scale(1.1);
 }
 
 nav ul{
@@ -117,7 +140,7 @@ nav ul li a:hover{
 }
 .about{
     padding:100px 10%;
-    background:#1a1a1a;
+    background:#ffffff;
 }
 
 .about-container{
@@ -165,7 +188,7 @@ nav ul li a:hover{
 }
 .vision{
     padding:80px 10%;
-    background:#111;
+    background:#0e0d0d;
     text-align:center;
 }
 
@@ -183,7 +206,7 @@ nav ul li a:hover{
 }
 
 .card{
-    background:#1e1e1e;
+    background:#171717;
     width:350px;
     padding:30px;
     border-radius:10px;
@@ -206,7 +229,7 @@ nav ul li a:hover{
 }
 
 .values{
-    background:#1a1a1a;
+    background:#f4f4f4;
     padding:80px 10%;
     text-align:center;
 }
@@ -248,7 +271,7 @@ nav ul li a:hover{
 }
 
 .future{
-    background:#111;
+    background:#1c1c1c;
     padding:80px 10%;
     text-align:center;
 }
@@ -287,7 +310,7 @@ nav ul li a:hover{
     line-height:28px;
 }
 .contact{
-    background:#1a1a1a;
+    background:#747474;
     padding:80px 10%;
     text-align:center;
 }
@@ -374,4 +397,65 @@ footer hr{
 .copyright{
     text-align:center;
     color:#999;
+}
+/* ===== Premium Navbar ===== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(15,23,42,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo img{
+    width:60px;
+}
+
+nav h2{
+    color:gold;
+    font-size:28px;
+    margin-right:auto;
+    margin-left:15px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    transition:all .3s ease;
+    position:relative;
+}
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:gold;
+    transition:.3s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:gold;
 }

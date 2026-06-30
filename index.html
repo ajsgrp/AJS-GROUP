@@ -15,6 +15,8 @@
             <img src="images/logo.png" alt="AJS Group Logo">
         </div>
 
+        <h2>AJS GROUP</h2>
+
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -26,12 +28,22 @@
 
 <section class="hero">
 
-    <h1>Building Tomorrow, Together.</h1>
+<h1>
 
-    <p>
-        AJS Group is building a strong foundation for future businesses with
-        innovation, trust and excellence.
-    </p>
+Building Tomorrow,
+
+<br>
+
+Together.
+
+</h1>
+
+<p>
+
+Empowering innovation, creating opportunities, and building
+future-ready businesses that inspire trust, excellence and sustainable growth.
+
+</p>  
 
     <div class="buttons">
 
@@ -181,19 +193,22 @@
 <section class="future">
 </section>
 
-<!-- 👇 IS JAGAH PASTE KARNA HAI -->
 
 <section class="contact">
 
     <h2>Contact Us</h2>
 
-    <form>
+    <form id="contact-form">
 
-        <input type="text" placeholder="Your Name">
+        <input type="text" name="from_name" placeholder="Your Name" required>
 
-        <input type="email" placeholder="Your Email">
+        <input type="email" name="from_email" placeholder="Your Email" required>
 
-        <textarea placeholder="Your Message"></textarea>
+        <input type="text" name="phone" placeholder="Phone Number">
+
+        <input type="text" name="subject" placeholder="Subject">
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
 
         <button type="submit">Send Message</button>
 
@@ -244,6 +259,13 @@
     </p>
 
 </footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init("4F68WHRrRlWoYyL4o");
+</script>
+
 <script src="script.js"></script>
 </body>
 </html>
