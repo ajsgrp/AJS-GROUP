@@ -19,8 +19,9 @@
 
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <a href="about.html">About</a>
             <li><a href="#">Vision</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
@@ -188,29 +189,59 @@ future-ready businesses that inspire trust, excellence and sustainable growth.
         </div>
 
     </div>
+    </section>
 
-</section>
-<section class="future">
-</section>
+<section id="contact" class="contact-section">
 
+    <h2>Contact AJS Group</h2>
 
-<section class="contact">
-
-    <h2>Contact Us</h2>
+    <p>
+        We'd love to hear from you. Send us your message and our team will get back to you soon.
+    </p>
 
     <form id="contact-form">
 
-        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required
+        >
 
-        <input type="email" name="from_email" placeholder="Your Email" required>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Mobile Number"
+            required
+        >
 
-        <input type="text" name="phone" placeholder="Phone Number">
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required
+        >
 
-        <input type="text" name="subject" placeholder="Subject">
+        <input
+            type="text"
+            id="subject"
+            placeholder="Subject"
+            required
+        >
 
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <textarea
+            id="message"
+            rows="6"
+            placeholder="Write your message..."
+            required
+        ></textarea>
 
-        <button type="submit">Send Message</button>
+        <button
+            type="submit"
+            class="btn1"
+        >
+            Send Message
+        </button>
 
     </form>
 
