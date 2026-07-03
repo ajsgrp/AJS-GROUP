@@ -11,19 +11,27 @@
 
 <header>
     <nav>
-        <div class="logo">
-            <img src="images/logo.png" alt="AJS Group Logo">
-        </div>
 
-        <h2>AJS GROUP</h2>
+    <div class="logo">
+        <img src="images/logo.png" alt="AJS Group Logo">
+    </div>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <a href="about.html">About</a>
-            <li><a href="#">Vision</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <h2>AJS GROUP</h2>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="#">Vision</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
     </nav>
 </header>
 
@@ -48,9 +56,9 @@ future-ready businesses that inspire trust, excellence and sustainable growth.
 
     <div class="buttons">
 
-        <button class="btn1">Know More</button>
+        <a href="#contact" class="btn2">Contact Us</a>
 
-        <button class="btn2">Contact Us</button>
+        <a href="#contact" class="btn2">Contact Us</a>
 
     </div>
 
@@ -201,49 +209,46 @@ future-ready businesses that inspire trust, excellence and sustainable growth.
 
     <form id="contact-form">
 
-        <input
-            type="text"
-            id="name"
-            placeholder="Full Name"
-            required
-        >
+    <input
+        type="text"
+        name="from_name"
+        placeholder="Full Name"
+        required
+    >
 
-        <input
-            type="tel"
-            id="phone"
-            placeholder="Mobile Number"
-            required
-        >
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Mobile Number"
+        required
+    >
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Email Address"
-            required
-        >
+    <input
+        type="email"
+        name="from_email"
+        placeholder="Email Address"
+        required
+    >
 
-        <input
-            type="text"
-            id="subject"
-            placeholder="Subject"
-            required
-        >
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required
+    >
 
-        <textarea
-            id="message"
-            rows="6"
-            placeholder="Write your message..."
-            required
-        ></textarea>
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Write your message..."
+        required
+    ></textarea>
 
-        <button
-            type="submit"
-            class="btn1"
-        >
-            Send Message
-        </button>
+    <button type="submit" class="btn1">
+        Send Message
+    </button>
 
-    </form>
+</form>
 
 </section>
 <footer>
@@ -277,7 +282,7 @@ future-ready businesses that inspire trust, excellence and sustainable growth.
 
             <p>Email : ajit702979@gmail.com</p>
 
-            <p>Phone : +91 90737 16446</p>
+            <p>Phone : +91 9073716446</p>
 
         </div>
 
@@ -289,12 +294,12 @@ future-ready businesses that inspire trust, excellence and sustainable growth.
         © 2026 AJS Group. All Rights Reserved.
     </p>
 
-</footer>
-<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-    emailjs.init("4F68WHRrRlWoYyL4o");
+    emailjs.init({
+        publicKey: "4F68WHRrRlWoYyL4o"
+    });
 </script>
 
 <script src="script.js"></script>
