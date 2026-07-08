@@ -1,7 +1,5 @@
 import { db } from "./firebase-config.js";
 import { collection, addDoc } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
-import { db } from "./firebase-config.js";
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
 
 console.log("Career Script Loaded");
 
@@ -21,17 +19,19 @@ if (resumeFile) {
     uploadData.append("file", resumeFile);
     uploadData.append("upload_preset", "ajs_resume");
 
-    const response = await fetch(
-        "https://api.cloudinary.com/v1_1/swpczdvm/auto/upload",
-        {
-            method: "POST",
-            body: uploadData
-        }
-    );
+   const response = await fetch(
+    "https://api.cloudinary.com/v1_1/swpczdvm/auto/upload",
+    {
+        method: "POST",
+        body: uploadData
+    }
+);
 
-    const result = await response.json();
-    
-    console.log(result);
+        console.log("Status:", response.status);
+
+        const result = await response.json();
+
+console.log("Cloudinary Response:", result);
 
     if (!result.secure_url) {
 

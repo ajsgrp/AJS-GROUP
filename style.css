@@ -1110,3 +1110,35 @@ background:white;
     background:#D4AF37;
     color:black;
 }
+
+.download-btn{
+    background:#d4af37;
+    color:#111827;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+    text-decoration:none;
+    border:2px solid #d4af37;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#111827;
+    color:#d4af37;
+}
+
+.view-btn{
+    background:#111827;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+    text-decoration:none;
+    border:2px solid #111827;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#d4af37;
+    color:#111827;
+}

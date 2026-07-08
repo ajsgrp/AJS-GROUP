@@ -46,7 +46,11 @@
 
              <li><a href="settings.html">⚙ Settings</a></li>
 
-             <li><a href="admin-login.html">🚪 Logout</a></li>
+             <li>
+               <a href="#" id="logoutBtn">
+                   🚪 Logout
+               </a>
+             </li>
 
         </ul>
 
@@ -57,6 +61,8 @@
     <main class="dashboard-content">
 
         <h1>Welcome, Admin 👋</h1>
+        <p id="welcomeAdmin"></p>
+        
 
         <p>Manage your AJS Group website from one place.</p>
 
@@ -64,17 +70,15 @@
 
             <div class="dashboard-card">
 
-                <h2>📩 Contact Messages</h2>
-
-                <h3>15</h3>
+                <h3>📩 Contact Messages</h3>
+                <h2 id="contactCount">0</h2>
 
             </div>
 
             <div class="dashboard-card">
 
-                <h2>💼 Applications</h2>
-
-                <h3>08</h3>
+                <h3>💼 Applications</h3>
+                <h2 id="applicationCount">0</h2>
 
             </div>
 
@@ -82,7 +86,7 @@
 
                 <h2>👥 Visitors</h2>
 
-                <h3>235</h3>
+                <h3 id="visitorCount">0</h3>
 
             </div>
 
@@ -99,6 +103,9 @@
     </main>
 
 </div>
-</body>
 
+<script type="module" src="js/dashboard.js"></script>
+<script type="module" src="js/auth-check.js"></script>
+
+</body>
 </html>
