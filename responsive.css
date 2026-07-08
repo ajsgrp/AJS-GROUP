@@ -1,0 +1,274 @@
+/* ==========================================
+   AJS GROUP RESPONSIVE CSS
+========================================== */
+
+/* Tablet */
+
+@media (max-width:1024px){
+
+    .hero,
+    .about-container,
+    .technology-container,
+    .contact-container,
+    .footer-container{
+
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .services-grid,
+    .dashboard-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+    /* Navbar */
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:15px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        width:100%;
+
+        text-align:center;
+
+        gap:15px;
+
+    }
+
+    /* Hero */
+
+    .hero{
+
+        padding:30px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .hero img{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+    /* Cards */
+
+    .services-grid,
+    .technology-grid,
+    .dashboard-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .service-card,
+    .dashboard-card{
+
+        width:100%;
+
+    }
+
+    /* Forms */
+
+    input,
+    textarea,
+    select,
+    button{
+
+        width:100%;
+
+    }
+
+    /* Contact */
+
+    .contact-container{
+
+        flex-direction:column;
+
+    }
+
+    /* Footer */
+
+    .footer-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    /* Admin */
+
+    .admin-dashboard{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+        position:relative;
+
+    }
+
+    .dashboard-content{
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    /* Tables */
+
+    .admin-table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+    h1{
+
+        font-size:26px;
+
+    }
+
+    h2{
+
+        font-size:20px;
+
+    }
+
+    h3{
+
+        font-size:18px;
+
+    }
+
+    p{
+
+        font-size:14px;
+
+    }
+
+    button{
+
+        padding:12px;
+
+    }
+
+}
+
+/* ===========================
+   Hamburger Menu
+=========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:32px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    nav{
+
+        position:relative;
+
+    }
+
+    nav ul{
+
+        display:none;
+
+        flex-direction:column;
+
+        width:100%;
+
+        background:#111827;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        padding:20px 0;
+
+    }
+
+    nav ul.active{
+
+        display:flex;
+
+    }
+
+    nav ul li{
+
+        margin:15px 0;
+
+    }
+
+}
