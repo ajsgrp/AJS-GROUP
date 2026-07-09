@@ -210,65 +210,46 @@
 }
 
 /* ===========================
-   Hamburger Menu
+   Mobile Hamburger Menu
 =========================== */
 
 .menu-toggle{
-
     display:none;
-
     font-size:32px;
-
-    color:white;
-
+    color:gold;
     cursor:pointer;
-
 }
 
 @media (max-width:768px){
 
     .menu-toggle{
-
         display:block;
-
     }
 
     nav{
-
         position:relative;
-
+        flex-wrap:wrap;
     }
 
-    nav ul{
-
+    #navMenu{
         display:none;
-
         flex-direction:column;
-
         width:100%;
-
         background:#111827;
-
         position:absolute;
-
         top:100%;
-
         left:0;
-
         padding:20px 0;
-
+        z-index:999;
     }
 
-    nav ul.active{
-
+    #navMenu.active{
         display:flex;
-
     }
 
-    nav ul li{
-
+    #navMenu li{
         margin:15px 0;
-
+        text-align:center;
     }
 
 }
